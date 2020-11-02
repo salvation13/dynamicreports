@@ -72,6 +72,7 @@ public class DefaultBinder {
             bind(defaults.getBooleanType(), xmlDynamicReports.getBooleanType());
             bind(defaults.getCharacterType(), xmlDynamicReports.getCharacterType());
             bind(defaults.getStringType(), xmlDynamicReports.getStringType());
+            bind(defaults.getObjectType(), xmlDynamicReports.getObjectType());
 
             if (xmlDynamicReports.isLoadSystemFonts() != null) {
                 defaults.setLoadSystemFonts(xmlDynamicReports.isLoadSystemFonts());

@@ -61,6 +61,7 @@ public class DataTypes {
     private static final CharacterType characterType = new CharacterType();
     private static final StringType stringType = new StringType();
     private static final ListType listType = new ListType();
+    private static final ObjectType objectType = new ObjectType();
 
     /**
      * <p>detectType.</p>
@@ -389,4 +390,8 @@ public class DataTypes {
     public static PercentageType percentageType() {
         return percentageType;
     }
+
+	public static ObjectType objectType() {
+		return objectType;
+	}
 }

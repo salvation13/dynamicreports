@@ -278,4 +278,8 @@ public class DataTypeBuilders {
     public PercentageType percentageType() {
         return DataTypes.percentageType();
     }
+    
+    public ObjectType objectType() {
+    	return DataTypes.objectType();
+    }
 }

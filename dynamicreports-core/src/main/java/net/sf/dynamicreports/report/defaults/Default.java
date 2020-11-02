@@ -268,6 +268,7 @@ public class Default {
     private DRDataType<Boolean, Boolean> booleanType;
     private DRDataType<Character, Character> characterType;
     private DRDataType<String, String> stringType;
+    private DRDataType<Object, Object> objectType;
     private HorizontalTextAlignment pageXofYHorizontalTextAlignment;
     // system fonts
     private boolean loadSystemFonts;
@@ -492,6 +493,7 @@ public class Default {
         this.booleanType = new DRDataType<>(null, HorizontalTextAlignment.CENTER);
         this.characterType = new DRDataType<>(null, HorizontalTextAlignment.LEFT);
         this.stringType = new DRDataType<>(null, HorizontalTextAlignment.LEFT);
+        this.objectType = new DRDataType<>(null, HorizontalTextAlignment.LEFT);
 
         this.loadSystemFonts = true;
     }
@@ -2017,6 +2019,10 @@ public class Default {
      */
     public DRDataType<String, String> getStringType() {
         return stringType;
+    }
+    
+    public DRDataType<Object, Object> getObjectType() {
+        return objectType;
     }
 
     /**
